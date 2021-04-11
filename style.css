@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+/* background: #edf2fc;
+   font-family: Dawning of a New Day;*/
+
+
+:root {
+    --primary-color: #000000;
+    --secondary-color : #fff;
+    --span-color: #ffa3a3ee;
+    --filter-bg : grayscale(0%);
+
+} 
+
+.dark-theme {
+    --primary-color : #fff; /*#ffa3a3ee;*/
+    --secondary-color : #000000;
+    --button-color : #fff;
+    --filter-bg : grayscale(100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    font-family: Dawning of a New Day;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    background: var(--secondary-color);
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    filter: var(--filter-bg);
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav ul li a:hover {
+    color: var(--span-color);
+}
+
+.info {
+    /* width: 50%; */
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.info h1 {
+    font-size: 4rem;
+}
+
+span {
+    color: var(--span-color);
+}
+
+.heading {
+    display: flex;
+    color: var(--primary-color);
+}
+
+.pIMG {
+    width: 100px;
+    margin-top: -4rem;
+    margin-left: -20px;
+    filter: var(--filter-bg);
+}
+
+.info p {
+    color: var(--primary-color);
+}
+
+.info a {
+    background: var(--primary-color);
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px 18px;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.img-box {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    transition: all 1s;
+}
+
+.img-box img {
+    padding: 35px 15px;
+    filter: var(--filter-bg);
+}
+/* 
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: right 1s;
+} */
+.img-box  .back-img {
+    left: 50%;
+    opacity: 0;
+    transition: all 1s;
+    /* height: 50%; */
+}
+
+.img-box:hover .back-img {
+    /* right: 40px; */
+    opacity: 1;
+
+    /* position: absolute; */
+    /* left: 30%; */
+}
+
+.img-box:hover .main-img {
+    transform: translateX(40px);
+}
+
+#icon {
+    width: 2.5rem;
+    cursor: pointer;
+    transform: rotate(-15deg);
+}
+
+
+
