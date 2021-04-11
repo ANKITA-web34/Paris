@@ -92,7 +92,7 @@ span {
 .pIMG {
     width: 100px;
     margin-top: -4rem;
-    margin-left: 20px;
+    margin-left: 2rem;
     filter: var(--filter-bg);
 }
 
